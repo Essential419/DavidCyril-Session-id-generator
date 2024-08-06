@@ -59,35 +59,35 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id, { text: '' + b64data });
 	
 				   let WASI_MD_TEXT = `
-*_Session Connected By David_Cyril*
+*_Session Connected By GODWIN_MD*
 *_Made With 🤍_*
 ______________________________________
 ╔════◇
-║ *『 AMAZING YOU'VE CHOSEN ITACHI UCHIHA 』*
+║ *『 AMAZING YOU'VE CHOSEN GODWIN BUG 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚════════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
 ║❒ *Ytube:* _youtube.com
-║❒ *Owner:* https://wa.me/2349066528353_
-║❒ *Repo:* _https://github.com/DeeCeeXxx_
-║❒ *WaGroup:* _https://whatsapp.com/channel/0029VaZsyQ21XqudOTjyG30Z
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaZsyQ21XqudOTjyG30Z
+║❒ *Owner:* https://wa.me/2349012464012_
+║❒ *Repo:* _https://github.com/ESSENTIAL419_
+║❒ *WaGroup:* _https://whatsapp.com/channel/0029VagndLW4Y9lff0t2Pp2e
+║❒ *WaChannel:* _https://whatsapp.com/channel/0029VagndLW4Y9lff0t2Pp2e
 ║❒ *Plugins:* _https://github.com/Itxxwasi 
 ╚════════════════════════╝
 _____________________________________
 	
 _Don't Forget To Give Star To My Repo_`
-	 await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id,{text:WASI_MD_TEXT},{quoted:session})
+	 await Qr_Code_By_GODWIN_MD.sendMessage(Qr_Code_By_Godwin_MD.user.id,{text:GODWIN_MD_TEXT},{quoted:session})
 
 
 
 					await delay(100);
-					await Qr_Code_By_Wasi_Tech.ws.close();
+					await Qr_Code_By_GODWIN_MD.ws.close();
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
-					WASI_MD_QR_CODE();
+					GODWIN_MD_QR_CODE();
 				}
 			});
 		} catch (err) {
@@ -100,6 +100,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await WASI_MD_QR_CODE()
+	return await GODWIN_MD_QR_CODE()
 });
 module.exports = router
