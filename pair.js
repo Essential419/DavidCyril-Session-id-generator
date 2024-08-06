@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Gifted_Tech = Gifted_Tech({
+            let Pair_Code_By_Godwin_MD = Gifted_Tech({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -43,8 +43,8 @@ router.get('/', async (req, res) => {
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_Gifted_Tech.ev.on('creds.update', saveCreds)
-            Pair_Code_By_Gifted_Tech.ev.on("connection.update", async (s) => {
+            Pair_Code_By_GODWIN_MD.ev.on('creds.update', saveCreds)
+            Pair_Code_By_GODWIN_MD.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
@@ -61,30 +61,30 @@ router.get('/', async (req, res) => {
 *_Made With 🚬🗿_*
 ______________________________________
 ╔════◇
-║ *『 AMAZING YOU'VE CHOSEN ITACHI UCHIHA 』*
+║ *『 AMAZING YOU'VE CHOSEN GODWIN BUG 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚════════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
 ║❒ *Ytube:* _youtube.com_
-║❒ *Owner:* _https://wa.me/2349066528353_
-║❒ *Repo:* _https://github.com/DeeCeeXxx/Itachi-Uchiha
-║❒ *WaGroup:* _https://whatsapp.com/channel/0029VaZsyQ21XqudOTjyG30Z
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaZsyQ21XqudOTjyG30Z
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaZsyQ21XqudOTjyG30Z
+║❒ *Owner:* _https://wa.me/2349012464012_
+║❒ *Repo:* _https://github.com/Essential419/Godwin_bug
+║❒ *WaGroup:* _https://whatsapp.com/channel/0029VagndLW4Y9lff0t2Pp2e
+║❒ *WaChannel:* _https://whatsapp.com/channel/0029VagndLW4Y9lff0t2Pp2e
+║❒ *WaChannel:* _https://whatsapp.com/channel/0029VagndLW4Y9lff0t2Pp2e
 ╚════════════════════════╝
 _____________________________________
 
 _Don't Forget To Give Star To My Repo_`
- await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
+ await Pair_Code_By_GODWIN_MD.sendMessage(Pair_Code_By_GODWIN_MD.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_Gifted_Tech.ws.close();
+        await Pair_Code_By_GODWIN_MD.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    GIFTED_MD_PAIR_CODE();
+                    GODWIN_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -95,6 +95,6 @@ _Don't Forget To Give Star To My Repo_`
          }
         }
     }
-    return await GIFTED_MD_PAIR_CODE()
+    return await GODWIN_MD_PAIR_CODE()
 });
 module.exports = router
